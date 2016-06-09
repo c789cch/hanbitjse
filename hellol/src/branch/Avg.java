@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @file   :avg3.java
  * @story  :
 */
-public class avg {
+public class Avg {
 	/**
 	 * 클라이언트에서 프로그램 개발 요청이 왔습니다.
 	 * 이름과 국,영,수 세과목점수를 입력받아서

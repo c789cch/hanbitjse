@@ -22,16 +22,16 @@ import java.util.Scanner;
 public class Calc3 {
 	public static void main(String[] args) {
 		//-----------init---------------
-		Scanner scan = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		int num1=0 , num2=0 ,numResult=0;
 		String symbol="",count="";
 		//----------op---------------------
 		System.out.println("첫번째숫자 : ");
-		num1 = scan.nextInt();
+		num1 = scanner.nextInt();
 		System.out.println("연산자 : ");
-		count = scan.next();
+		count = scanner.next();
 		System.out.println("두번째숫자 :");
-		num2 = scan.nextInt();
+		num2 = scanner.nextInt();
 		switch (count) {
 		case "+":
 			symbol = "+";
@@ -45,10 +45,12 @@ public class Calc3 {
 			symbol = "*";
 		numResult= num1*num2;
 			break;
-		case "/":symbol = "/";
+		case "/":
+			symbol = "/";
 		numResult= num1/num2;
 			break;
-		case "%":symbol = "%";
+		case "%":
+			symbol = "%";
 		numResult= num1%num2;
 			break;
 		default:
@@ -57,7 +59,7 @@ public class Calc3 {
 			
 		}
 		//------------out-------------
-		System.out.println(num1+num2+symbol+numResult);
+		System.out.println(num1+symbol+num2+"="+numResult);
 	}
 }
 		
